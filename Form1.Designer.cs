@@ -127,7 +127,7 @@ namespace OP_Macro
             clickGroupBox.Controls.Add(panel1);
             clickGroupBox.Location = new Point(11, 12);
             clickGroupBox.Name = "clickGroupBox";
-            clickGroupBox.Size = new Size(894, 125);
+            clickGroupBox.Size = new Size(962, 152);
             clickGroupBox.TabIndex = 0;
             clickGroupBox.TabStop = false;
             clickGroupBox.Text = "Click";
@@ -136,9 +136,9 @@ namespace OP_Macro
             // 
             clickToggleButton.FlatStyle = FlatStyle.Flat;
             clickToggleButton.Font = new Font("Segoe UI", 9F);
-            clickToggleButton.Location = new Point(747, 75);
+            clickToggleButton.Location = new Point(747, 85);
             clickToggleButton.Name = "clickToggleButton";
-            clickToggleButton.Size = new Size(141, 44);
+            clickToggleButton.Size = new Size(209, 60);
             clickToggleButton.TabIndex = 18;
             clickToggleButton.Text = "Включи";
             clickToggleButton.UseVisualStyleBackColor = true;
@@ -151,7 +151,7 @@ namespace OP_Macro
             clickHSButton.Font = new Font("Segoe UI", 9F);
             clickHSButton.Location = new Point(747, 19);
             clickHSButton.Name = "clickHSButton";
-            clickHSButton.Size = new Size(141, 44);
+            clickHSButton.Size = new Size(209, 60);
             clickHSButton.TabIndex = 16;
             clickHSButton.Text = "Настройки за бърз клавиш";
             clickHSButton.UseVisualStyleBackColor = false;
@@ -160,18 +160,18 @@ namespace OP_Macro
             // labelRepTimes
             // 
             labelRepTimes.AutoSize = true;
-            labelRepTimes.Location = new Point(587, 83);
+            labelRepTimes.Location = new Point(589, 103);
             labelRepTimes.Name = "labelRepTimes";
-            labelRepTimes.Size = new Size(38, 15);
+            labelRepTimes.Size = new Size(58, 25);
             labelRepTimes.TabIndex = 1;
             labelRepTimes.Text = "Брой:";
             // 
             // repetitionsNumBox
             // 
             repetitionsNumBox.Enabled = false;
-            repetitionsNumBox.Location = new Point(646, 81);
+            repetitionsNumBox.Location = new Point(647, 101);
             repetitionsNumBox.Name = "repetitionsNumBox";
-            repetitionsNumBox.Size = new Size(88, 23);
+            repetitionsNumBox.Size = new Size(88, 31);
             repetitionsNumBox.TabIndex = 15;
             repetitionsNumBox.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
@@ -180,7 +180,7 @@ namespace OP_Macro
             panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Location = new Point(741, 19);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1, 100);
+            panel2.Size = new Size(1, 125);
             panel2.TabIndex = 2;
             panel2.TabStop = true;
             // 
@@ -189,7 +189,7 @@ namespace OP_Macro
             RepetitionCB.AutoSize = true;
             RepetitionCB.Location = new Point(587, 29);
             RepetitionCB.Name = "RepetitionCB";
-            RepetitionCB.Size = new Size(93, 19);
+            RepetitionCB.Size = new Size(139, 29);
             RepetitionCB.TabIndex = 14;
             RepetitionCB.Text = "Повторение";
             RepetitionCB.UseVisualStyleBackColor = true;
@@ -201,18 +201,18 @@ namespace OP_Macro
             CTypeCB.DropDownStyle = ComboBoxStyle.DropDownList;
             CTypeCB.FormattingEnabled = true;
             CTypeCB.Items.AddRange(new object[] { "Single", "Double" });
-            CTypeCB.Location = new Point(424, 80);
+            CTypeCB.Location = new Point(424, 103);
             CTypeCB.Name = "CTypeCB";
-            CTypeCB.Size = new Size(151, 23);
+            CTypeCB.Size = new Size(151, 33);
             CTypeCB.TabIndex = 13;
             CTypeCB.SelectedIndexChanged += CTypeCB_SelectedIndexChanged;
             // 
             // labelClickType
             // 
             labelClickType.AutoSize = true;
-            labelClickType.Location = new Point(343, 83);
+            labelClickType.Location = new Point(330, 103);
             labelClickType.Name = "labelClickType";
-            labelClickType.Size = new Size(59, 15);
+            labelClickType.Size = new Size(88, 25);
             labelClickType.TabIndex = 12;
             labelClickType.Text = "Вид клик:";
             // 
@@ -222,35 +222,36 @@ namespace OP_Macro
             MButtonCB.DropDownStyle = ComboBoxStyle.DropDownList;
             MButtonCB.FormattingEnabled = true;
             MButtonCB.Items.AddRange(new object[] { "Left", "Right", "Middle" });
-            MButtonCB.Location = new Point(117, 80);
+            MButtonCB.Location = new Point(159, 103);
             MButtonCB.Name = "MButtonCB";
-            MButtonCB.Size = new Size(126, 23);
+            MButtonCB.Size = new Size(126, 33);
             MButtonCB.TabIndex = 11;
             MButtonCB.SelectedIndexChanged += MButtonCB_SelectedIndexChanged;
             // 
             // labelMouseButton
             // 
             labelMouseButton.AutoSize = true;
-            labelMouseButton.Location = new Point(6, 83);
+            labelMouseButton.Location = new Point(6, 103);
             labelMouseButton.Name = "labelMouseButton";
-            labelMouseButton.Size = new Size(100, 15);
+            labelMouseButton.Size = new Size(147, 25);
             labelMouseButton.TabIndex = 10;
             labelMouseButton.Text = "Бутон на мишка:";
             // 
             // labelMilliseconds
             // 
             labelMilliseconds.AutoSize = true;
-            labelMilliseconds.Location = new Point(485, 29);
+            labelMilliseconds.BackColor = Color.Transparent;
+            labelMilliseconds.Location = new Point(460, 30);
             labelMilliseconds.Name = "labelMilliseconds";
-            labelMilliseconds.Size = new Size(81, 15);
+            labelMilliseconds.Size = new Size(119, 25);
             labelMilliseconds.TabIndex = 9;
             labelMilliseconds.Text = "милисекунди";
             // 
             // TBMilliseconds
             // 
-            TBMilliseconds.Location = new Point(411, 27);
+            TBMilliseconds.Location = new Point(397, 27);
             TBMilliseconds.Name = "TBMilliseconds";
-            TBMilliseconds.Size = new Size(67, 23);
+            TBMilliseconds.Size = new Size(60, 31);
             TBMilliseconds.TabIndex = 8;
             TBMilliseconds.Text = "1000";
             TBMilliseconds.TextAlign = HorizontalAlignment.Right;
@@ -261,35 +262,38 @@ namespace OP_Macro
             // labelSeconds
             // 
             labelSeconds.AutoSize = true;
-            labelSeconds.Location = new Point(343, 29);
+            labelSeconds.BackColor = Color.Transparent;
+            labelSeconds.Location = new Point(314, 30);
             labelSeconds.Name = "labelSeconds";
-            labelSeconds.Size = new Size(51, 15);
+            labelSeconds.Size = new Size(77, 25);
             labelSeconds.TabIndex = 7;
             labelSeconds.Text = "секунди";
             // 
             // labelMinutes
             // 
             labelMinutes.AutoSize = true;
-            labelMinutes.Location = new Point(203, 29);
+            labelMinutes.BackColor = Color.Transparent;
+            labelMinutes.Location = new Point(180, 30);
             labelMinutes.Name = "labelMinutes";
-            labelMinutes.Size = new Size(48, 15);
+            labelMinutes.Size = new Size(71, 25);
             labelMinutes.TabIndex = 6;
             labelMinutes.Text = "минути";
             // 
             // labelHours
             // 
             labelHours.AutoSize = true;
-            labelHours.Location = new Point(79, 29);
+            labelHours.BackColor = Color.Transparent;
+            labelHours.Location = new Point(71, 30);
             labelHours.Name = "labelHours";
-            labelHours.Size = new Size(32, 15);
+            labelHours.Size = new Size(48, 25);
             labelHours.TabIndex = 5;
             labelHours.Text = "часа";
             // 
             // TBSeconds
             // 
-            TBSeconds.Location = new Point(270, 27);
+            TBSeconds.Location = new Point(252, 27);
             TBSeconds.Name = "TBSeconds";
-            TBSeconds.Size = new Size(67, 23);
+            TBSeconds.Size = new Size(60, 31);
             TBSeconds.TabIndex = 4;
             TBSeconds.Text = "0";
             TBSeconds.TextAlign = HorizontalAlignment.Right;
@@ -299,9 +303,9 @@ namespace OP_Macro
             // 
             // TBMinutes
             // 
-            TBMinutes.Location = new Point(130, 27);
+            TBMinutes.Location = new Point(118, 27);
             TBMinutes.Name = "TBMinutes";
-            TBMinutes.Size = new Size(67, 23);
+            TBMinutes.Size = new Size(60, 31);
             TBMinutes.TabIndex = 3;
             TBMinutes.Text = "0";
             TBMinutes.TextAlign = HorizontalAlignment.Right;
@@ -313,7 +317,7 @@ namespace OP_Macro
             // 
             TBHours.Location = new Point(5, 27);
             TBHours.Name = "TBHours";
-            TBHours.Size = new Size(67, 23);
+            TBHours.Size = new Size(60, 31);
             TBHours.TabIndex = 2;
             TBHours.Text = "0";
             TBHours.TextAlign = HorizontalAlignment.Right;
@@ -326,7 +330,7 @@ namespace OP_Macro
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Location = new Point(581, 19);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1, 100);
+            panel1.Size = new Size(1, 125);
             panel1.TabIndex = 1;
             panel1.TabStop = true;
             // 
@@ -343,20 +347,21 @@ namespace OP_Macro
             textGroupBox.Controls.Add(panel3);
             textGroupBox.Controls.Add(textHSButton);
             textGroupBox.Controls.Add(textTB);
-            textGroupBox.Location = new Point(11, 143);
+            textGroupBox.Location = new Point(12, 170);
             textGroupBox.Name = "textGroupBox";
-            textGroupBox.Size = new Size(894, 125);
+            textGroupBox.Size = new Size(962, 152);
             textGroupBox.TabIndex = 1;
             textGroupBox.TabStop = false;
             textGroupBox.Text = "Text";
+            textGroupBox.Enter += textGroupBox_Enter;
             // 
             // richText3
             // 
             richText3.FlatStyle = FlatStyle.Flat;
             richText3.Font = new Font("Segoe UI", 8F);
-            richText3.Location = new Point(301, 72);
+            richText3.Location = new Point(360, 72);
             richText3.Name = "richText3";
-            richText3.Size = new Size(141, 44);
+            richText3.Size = new Size(170, 60);
             richText3.TabIndex = 23;
             richText3.Text = "Разширен текст 3";
             richText3.UseVisualStyleBackColor = true;
@@ -366,9 +371,9 @@ namespace OP_Macro
             // 
             richText2.FlatStyle = FlatStyle.Flat;
             richText2.Font = new Font("Segoe UI", 8F);
-            richText2.Location = new Point(154, 72);
+            richText2.Location = new Point(184, 72);
             richText2.Name = "richText2";
-            richText2.Size = new Size(141, 44);
+            richText2.Size = new Size(170, 60);
             richText2.TabIndex = 22;
             richText2.Text = "Разширен текст 2";
             richText2.UseVisualStyleBackColor = true;
@@ -380,7 +385,7 @@ namespace OP_Macro
             richText1.Font = new Font("Segoe UI", 8F);
             richText1.Location = new Point(7, 72);
             richText1.Name = "richText1";
-            richText1.Size = new Size(141, 44);
+            richText1.Size = new Size(170, 60);
             richText1.TabIndex = 21;
             richText1.Text = "Разширен текст 1";
             richText1.UseVisualStyleBackColor = true;
@@ -391,16 +396,16 @@ namespace OP_Macro
             panel6.BorderStyle = BorderStyle.FixedSingle;
             panel6.Location = new Point(581, 19);
             panel6.Name = "panel6";
-            panel6.Size = new Size(1, 100);
+            panel6.Size = new Size(1, 125);
             panel6.TabIndex = 2;
             panel6.TabStop = true;
             // 
             // labelTextRep
             // 
             labelTextRep.AutoSize = true;
-            labelTextRep.Location = new Point(587, 87);
+            labelTextRep.Location = new Point(588, 89);
             labelTextRep.Name = "labelTextRep";
-            labelTextRep.Size = new Size(38, 15);
+            labelTextRep.Size = new Size(58, 25);
             labelTextRep.TabIndex = 19;
             labelTextRep.Text = "Брой:";
             // 
@@ -409,7 +414,7 @@ namespace OP_Macro
             textCheckBox.AutoSize = true;
             textCheckBox.Location = new Point(587, 31);
             textCheckBox.Name = "textCheckBox";
-            textCheckBox.Size = new Size(93, 19);
+            textCheckBox.Size = new Size(139, 29);
             textCheckBox.TabIndex = 19;
             textCheckBox.Text = "Повторение";
             textCheckBox.UseVisualStyleBackColor = true;
@@ -418,9 +423,9 @@ namespace OP_Macro
             // textNumBox
             // 
             textNumBox.Enabled = false;
-            textNumBox.Location = new Point(646, 85);
+            textNumBox.Location = new Point(646, 87);
             textNumBox.Name = "textNumBox";
-            textNumBox.Size = new Size(88, 23);
+            textNumBox.Size = new Size(88, 31);
             textNumBox.TabIndex = 20;
             textNumBox.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
@@ -428,9 +433,9 @@ namespace OP_Macro
             // 
             textASButton.FlatStyle = FlatStyle.Flat;
             textASButton.Font = new Font("Segoe UI", 8F);
-            textASButton.Location = new Point(747, 75);
+            textASButton.Location = new Point(748, 87);
             textASButton.Name = "textASButton";
-            textASButton.Size = new Size(141, 44);
+            textASButton.Size = new Size(209, 60);
             textASButton.TabIndex = 20;
             textASButton.Text = "Разширени настройки";
             textASButton.UseVisualStyleBackColor = true;
@@ -441,7 +446,7 @@ namespace OP_Macro
             panel3.BorderStyle = BorderStyle.FixedSingle;
             panel3.Location = new Point(741, 19);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1, 100);
+            panel3.Size = new Size(1, 125);
             panel3.TabIndex = 3;
             panel3.TabStop = true;
             // 
@@ -450,9 +455,9 @@ namespace OP_Macro
             textHSButton.BackColor = SystemColors.Control;
             textHSButton.FlatStyle = FlatStyle.Flat;
             textHSButton.Font = new Font("Segoe UI", 9F);
-            textHSButton.Location = new Point(747, 19);
+            textHSButton.Location = new Point(748, 21);
             textHSButton.Name = "textHSButton";
-            textHSButton.Size = new Size(141, 44);
+            textHSButton.Size = new Size(209, 60);
             textHSButton.TabIndex = 19;
             textHSButton.Text = "Настройки за бърз клавиш";
             textHSButton.UseVisualStyleBackColor = false;
@@ -462,7 +467,7 @@ namespace OP_Macro
             // 
             textTB.Location = new Point(6, 27);
             textTB.Name = "textTB";
-            textTB.Size = new Size(570, 23);
+            textTB.Size = new Size(570, 31);
             textTB.TabIndex = 0;
             // 
             // RARGroupBox
@@ -477,11 +482,11 @@ namespace OP_Macro
             RARGroupBox.Controls.Add(recordActionLabel);
             RARGroupBox.Controls.Add(panel4);
             RARGroupBox.Controls.Add(recordHSButton);
-            RARGroupBox.Location = new Point(11, 275);
+            RARGroupBox.Location = new Point(11, 329);
             RARGroupBox.Margin = new Padding(3, 4, 3, 4);
             RARGroupBox.Name = "RARGroupBox";
             RARGroupBox.Padding = new Padding(3, 4, 3, 4);
-            RARGroupBox.Size = new Size(894, 125);
+            RARGroupBox.Size = new Size(962, 152);
             RARGroupBox.TabIndex = 2;
             RARGroupBox.TabStop = false;
             RARGroupBox.Text = "Record and Replay";
@@ -489,9 +494,9 @@ namespace OP_Macro
             // recordClicksLabel
             // 
             recordClicksLabel.AutoSize = true;
-            recordClicksLabel.Location = new Point(7, 46);
+            recordClicksLabel.Location = new Point(8, 50);
             recordClicksLabel.Name = "recordClicksLabel";
-            recordClicksLabel.Size = new Size(59, 15);
+            recordClicksLabel.Size = new Size(89, 25);
             recordClicksLabel.TabIndex = 36;
             recordClicksLabel.Text = "Кликове: ";
             recordClicksLabel.Visible = false;
@@ -499,10 +504,10 @@ namespace OP_Macro
             // recordStatsCheckBox
             // 
             recordStatsCheckBox.AutoSize = true;
-            recordStatsCheckBox.Location = new Point(321, 68);
+            recordStatsCheckBox.Location = new Point(161, 21);
             recordStatsCheckBox.Margin = new Padding(3, 4, 3, 4);
             recordStatsCheckBox.Name = "recordStatsCheckBox";
-            recordStatsCheckBox.Size = new Size(88, 19);
+            recordStatsCheckBox.Size = new Size(126, 29);
             recordStatsCheckBox.TabIndex = 35;
             recordStatsCheckBox.Text = "Статистики";
             recordStatsCheckBox.UseVisualStyleBackColor = true;
@@ -512,9 +517,9 @@ namespace OP_Macro
             // 
             replayLoopLabel.AutoSize = true;
             replayLoopLabel.BackColor = Color.Transparent;
-            replayLoopLabel.Location = new Point(477, 46);
+            replayLoopLabel.Location = new Point(477, 50);
             replayLoopLabel.Name = "replayLoopLabel";
-            replayLoopLabel.Size = new Size(77, 15);
+            replayLoopLabel.Size = new Size(117, 25);
             replayLoopLabel.TabIndex = 34;
             replayLoopLabel.Text = "Повторения:";
             replayLoopLabel.Visible = false;
@@ -522,10 +527,10 @@ namespace OP_Macro
             // replayStatsCheckBox
             // 
             replayStatsCheckBox.AutoSize = true;
-            replayStatsCheckBox.Location = new Point(653, 24);
+            replayStatsCheckBox.Location = new Point(656, 21);
             replayStatsCheckBox.Margin = new Padding(3, 4, 3, 4);
             replayStatsCheckBox.Name = "replayStatsCheckBox";
-            replayStatsCheckBox.Size = new Size(88, 19);
+            replayStatsCheckBox.Size = new Size(126, 29);
             replayStatsCheckBox.TabIndex = 31;
             replayStatsCheckBox.Text = "Статистики";
             replayStatsCheckBox.UseVisualStyleBackColor = true;
@@ -535,10 +540,10 @@ namespace OP_Macro
             // 
             saveCaptureButton.FlatStyle = FlatStyle.Flat;
             saveCaptureButton.Font = new Font("Segoe UI", 9F);
-            saveCaptureButton.Location = new Point(747, 73);
+            saveCaptureButton.Location = new Point(788, 88);
             saveCaptureButton.Margin = new Padding(0);
             saveCaptureButton.Name = "saveCaptureButton";
-            saveCaptureButton.Size = new Size(141, 44);
+            saveCaptureButton.Size = new Size(170, 60);
             saveCaptureButton.TabIndex = 30;
             saveCaptureButton.Text = "Запази запис";
             saveCaptureButton.UseVisualStyleBackColor = true;
@@ -550,7 +555,7 @@ namespace OP_Macro
             replayActionLabel.BackColor = Color.Transparent;
             replayActionLabel.Location = new Point(477, 25);
             replayActionLabel.Name = "replayActionLabel";
-            replayActionLabel.Size = new Size(66, 15);
+            replayActionLabel.Size = new Size(100, 25);
             replayActionLabel.TabIndex = 29;
             replayActionLabel.Text = "Неактивно";
             replayActionLabel.Visible = false;
@@ -560,9 +565,9 @@ namespace OP_Macro
             replayHSButton.BackColor = SystemColors.Control;
             replayHSButton.FlatStyle = FlatStyle.Flat;
             replayHSButton.Font = new Font("Segoe UI", 9F);
-            replayHSButton.Location = new Point(747, 17);
+            replayHSButton.Location = new Point(788, 17);
             replayHSButton.Name = "replayHSButton";
-            replayHSButton.Size = new Size(141, 44);
+            replayHSButton.Size = new Size(170, 60);
             replayHSButton.TabIndex = 27;
             replayHSButton.Text = "Настройки за бърз клавиш";
             replayHSButton.UseVisualStyleBackColor = false;
@@ -573,7 +578,7 @@ namespace OP_Macro
             recordActionLabel.AutoSize = true;
             recordActionLabel.Location = new Point(7, 25);
             recordActionLabel.Name = "recordActionLabel";
-            recordActionLabel.Size = new Size(66, 15);
+            recordActionLabel.Size = new Size(100, 25);
             recordActionLabel.TabIndex = 23;
             recordActionLabel.Text = "Неактивно";
             recordActionLabel.Visible = false;
@@ -583,7 +588,7 @@ namespace OP_Macro
             panel4.BorderStyle = BorderStyle.FixedSingle;
             panel4.Location = new Point(469, 17);
             panel4.Name = "panel4";
-            panel4.Size = new Size(1, 100);
+            panel4.Size = new Size(1, 125);
             panel4.TabIndex = 4;
             panel4.TabStop = true;
             // 
@@ -592,9 +597,9 @@ namespace OP_Macro
             recordHSButton.BackColor = SystemColors.Control;
             recordHSButton.FlatStyle = FlatStyle.Flat;
             recordHSButton.Font = new Font("Segoe UI", 9F);
-            recordHSButton.Location = new Point(321, 17);
+            recordHSButton.Location = new Point(293, 23);
             recordHSButton.Name = "recordHSButton";
-            recordHSButton.Size = new Size(141, 44);
+            recordHSButton.Size = new Size(170, 60);
             recordHSButton.TabIndex = 21;
             recordHSButton.Text = "Настройки за бърз клавиш";
             recordHSButton.UseVisualStyleBackColor = false;
@@ -615,11 +620,11 @@ namespace OP_Macro
             teleportGroupBox.Controls.Add(teleportX2);
             teleportGroupBox.Controls.Add(teleportY1);
             teleportGroupBox.Controls.Add(teleportX1);
-            teleportGroupBox.Location = new Point(11, 408);
+            teleportGroupBox.Location = new Point(11, 489);
             teleportGroupBox.Margin = new Padding(3, 4, 3, 4);
             teleportGroupBox.Name = "teleportGroupBox";
             teleportGroupBox.Padding = new Padding(3, 4, 3, 4);
-            teleportGroupBox.Size = new Size(337, 125);
+            teleportGroupBox.Size = new Size(498, 152);
             teleportGroupBox.TabIndex = 3;
             teleportGroupBox.TabStop = false;
             teleportGroupBox.Text = "Teleport";
@@ -629,9 +634,9 @@ namespace OP_Macro
             teleport2HSButton.BackColor = SystemColors.Control;
             teleport2HSButton.FlatStyle = FlatStyle.Flat;
             teleport2HSButton.Font = new Font("Segoe UI", 9F);
-            teleport2HSButton.Location = new Point(190, 73);
+            teleport2HSButton.Location = new Point(312, 85);
             teleport2HSButton.Name = "teleport2HSButton";
-            teleport2HSButton.Size = new Size(141, 44);
+            teleport2HSButton.Size = new Size(180, 60);
             teleport2HSButton.TabIndex = 105;
             teleport2HSButton.Text = "Настройки за телепортация";
             teleport2HSButton.UseVisualStyleBackColor = false;
@@ -641,9 +646,9 @@ namespace OP_Macro
             // 
             Y2Label.AutoSize = true;
             Y2Label.BackColor = Color.Transparent;
-            Y2Label.Location = new Point(5, 95);
+            Y2Label.Location = new Point(8, 112);
             Y2Label.Name = "Y2Label";
-            Y2Label.Size = new Size(23, 15);
+            Y2Label.Size = new Size(36, 25);
             Y2Label.TabIndex = 104;
             Y2Label.Text = "Y2:";
             // 
@@ -651,9 +656,9 @@ namespace OP_Macro
             // 
             X2Label.AutoSize = true;
             X2Label.BackColor = Color.Transparent;
-            X2Label.Location = new Point(5, 75);
+            X2Label.Location = new Point(7, 87);
             X2Label.Name = "X2Label";
-            X2Label.Size = new Size(23, 15);
+            X2Label.Size = new Size(37, 25);
             X2Label.TabIndex = 103;
             X2Label.Text = "X2:";
             // 
@@ -661,9 +666,9 @@ namespace OP_Macro
             // 
             Y1Label.AutoSize = true;
             Y1Label.BackColor = Color.Transparent;
-            Y1Label.Location = new Point(5, 45);
+            Y1Label.Location = new Point(8, 50);
             Y1Label.Name = "Y1Label";
-            Y1Label.Size = new Size(23, 15);
+            Y1Label.Size = new Size(36, 25);
             Y1Label.TabIndex = 102;
             Y1Label.Text = "Y1:";
             // 
@@ -671,18 +676,18 @@ namespace OP_Macro
             // 
             X1Label.AutoSize = true;
             X1Label.BackColor = Color.Transparent;
-            X1Label.Location = new Point(5, 25);
+            X1Label.Location = new Point(8, 25);
             X1Label.Name = "X1Label";
-            X1Label.Size = new Size(23, 15);
+            X1Label.Size = new Size(37, 25);
             X1Label.TabIndex = 101;
             X1Label.Text = "X1:";
             // 
             // teleportLoopsLabel
             // 
             teleportLoopsLabel.AutoSize = true;
-            teleportLoopsLabel.Location = new Point(96, 73);
+            teleportLoopsLabel.Location = new Point(157, 79);
             teleportLoopsLabel.Name = "teleportLoopsLabel";
-            teleportLoopsLabel.Size = new Size(77, 15);
+            teleportLoopsLabel.Size = new Size(117, 25);
             teleportLoopsLabel.TabIndex = 37;
             teleportLoopsLabel.Text = "Повторения:";
             teleportLoopsLabel.Visible = false;
@@ -690,9 +695,9 @@ namespace OP_Macro
             // teleportPositionLabel
             // 
             teleportPositionLabel.AutoSize = true;
-            teleportPositionLabel.Location = new Point(96, 46);
+            teleportPositionLabel.Location = new Point(157, 54);
             teleportPositionLabel.Name = "teleportPositionLabel";
-            teleportPositionLabel.Size = new Size(53, 15);
+            teleportPositionLabel.Size = new Size(80, 25);
             teleportPositionLabel.TabIndex = 36;
             teleportPositionLabel.Text = "Индекс: ";
             teleportPositionLabel.Visible = false;
@@ -701,10 +706,10 @@ namespace OP_Macro
             // 
             teleportCheckBox.AutoSize = true;
             teleportCheckBox.BackColor = Color.Transparent;
-            teleportCheckBox.Location = new Point(96, 20);
+            teleportCheckBox.Location = new Point(180, 21);
             teleportCheckBox.Margin = new Padding(3, 4, 3, 4);
             teleportCheckBox.Name = "teleportCheckBox";
-            teleportCheckBox.Size = new Size(88, 19);
+            teleportCheckBox.Size = new Size(126, 29);
             teleportCheckBox.TabIndex = 35;
             teleportCheckBox.Text = "Статистики";
             teleportCheckBox.UseVisualStyleBackColor = false;
@@ -714,9 +719,9 @@ namespace OP_Macro
             // 
             teleportY2.AutoSize = true;
             teleportY2.BackColor = Color.Transparent;
-            teleportY2.Location = new Point(30, 95);
+            teleportY2.Location = new Point(47, 112);
             teleportY2.Name = "teleportY2";
-            teleportY2.Size = new Size(65, 15);
+            teleportY2.Size = new Size(100, 25);
             teleportY2.TabIndex = 9;
             teleportY2.Text = "координат";
             // 
@@ -725,9 +730,9 @@ namespace OP_Macro
             teleportHSButton.BackColor = SystemColors.Control;
             teleportHSButton.FlatStyle = FlatStyle.Flat;
             teleportHSButton.Font = new Font("Segoe UI", 9F);
-            teleportHSButton.Location = new Point(190, 17);
+            teleportHSButton.Location = new Point(312, 20);
             teleportHSButton.Name = "teleportHSButton";
-            teleportHSButton.Size = new Size(141, 44);
+            teleportHSButton.Size = new Size(180, 60);
             teleportHSButton.TabIndex = 100;
             teleportHSButton.Text = "Настройки за координати";
             teleportHSButton.UseVisualStyleBackColor = false;
@@ -737,9 +742,9 @@ namespace OP_Macro
             // 
             teleportX2.AutoSize = true;
             teleportX2.BackColor = Color.Transparent;
-            teleportX2.Location = new Point(30, 75);
+            teleportX2.Location = new Point(47, 87);
             teleportX2.Name = "teleportX2";
-            teleportX2.Size = new Size(65, 15);
+            teleportX2.Size = new Size(100, 25);
             teleportX2.TabIndex = 8;
             teleportX2.Text = "координат";
             // 
@@ -747,9 +752,9 @@ namespace OP_Macro
             // 
             teleportY1.AutoSize = true;
             teleportY1.BackColor = Color.Transparent;
-            teleportY1.Location = new Point(30, 44);
+            teleportY1.Location = new Point(47, 50);
             teleportY1.Name = "teleportY1";
-            teleportY1.Size = new Size(65, 15);
+            teleportY1.Size = new Size(100, 25);
             teleportY1.TabIndex = 7;
             teleportY1.Text = "координат";
             // 
@@ -757,22 +762,23 @@ namespace OP_Macro
             // 
             teleportX1.AutoSize = true;
             teleportX1.BackColor = Color.Transparent;
-            teleportX1.Location = new Point(30, 24);
+            teleportX1.Location = new Point(47, 25);
             teleportX1.Name = "teleportX1";
-            teleportX1.Size = new Size(65, 15);
+            teleportX1.Size = new Size(100, 25);
             teleportX1.TabIndex = 6;
             teleportX1.Text = "координат";
+            teleportX1.Click += teleportX1_Click;
             // 
             // miscGroupBox
             // 
             miscGroupBox.Controls.Add(panel5);
             miscGroupBox.Controls.Add(creditsLabel);
             miscGroupBox.Controls.Add(helpButton);
-            miscGroupBox.Location = new Point(354, 408);
+            miscGroupBox.Location = new Point(515, 489);
             miscGroupBox.Margin = new Padding(3, 4, 3, 4);
             miscGroupBox.Name = "miscGroupBox";
             miscGroupBox.Padding = new Padding(3, 4, 3, 4);
-            miscGroupBox.Size = new Size(551, 125);
+            miscGroupBox.Size = new Size(459, 152);
             miscGroupBox.TabIndex = 4;
             miscGroupBox.TabStop = false;
             miscGroupBox.Text = "Miscellaneous";
@@ -780,18 +786,19 @@ namespace OP_Macro
             // panel5
             // 
             panel5.BorderStyle = BorderStyle.FixedSingle;
-            panel5.Location = new Point(398, 17);
+            panel5.Location = new Point(274, 20);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1, 100);
+            panel5.Size = new Size(1, 125);
             panel5.TabIndex = 4;
             panel5.TabStop = true;
+            panel5.Paint += panel5_Paint;
             // 
             // creditsLabel
             // 
             creditsLabel.AutoSize = true;
-            creditsLabel.Location = new Point(404, 17);
+            creditsLabel.Location = new Point(281, 17);
             creditsLabel.Name = "creditsLabel";
-            creditsLabel.Size = new Size(116, 30);
+            creditsLabel.Size = new Size(176, 50);
             creditsLabel.TabIndex = 36;
             creditsLabel.Text = "OP Utility Tool v1.1.1\r\nОт H. Bohosyan\r\n";
             // 
@@ -800,10 +807,10 @@ namespace OP_Macro
             helpButton.BackColor = Color.Silver;
             helpButton.FlatStyle = FlatStyle.Flat;
             helpButton.Font = new Font("Segoe UI", 9F);
-            helpButton.Location = new Point(404, 75);
+            helpButton.Location = new Point(281, 77);
             helpButton.Margin = new Padding(0);
             helpButton.Name = "helpButton";
-            helpButton.Size = new Size(141, 44);
+            helpButton.Size = new Size(169, 60);
             helpButton.TabIndex = 35;
             helpButton.Text = "Помощ?";
             helpButton.UseVisualStyleBackColor = false;
@@ -821,7 +828,7 @@ namespace OP_Macro
             // 
             // Form1
             // 
-            ClientSize = new Size(919, 547);
+            ClientSize = new Size(985, 656);
             Controls.Add(miscGroupBox);
             Controls.Add(teleportGroupBox);
             Controls.Add(RARGroupBox);

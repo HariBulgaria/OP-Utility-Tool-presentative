@@ -1,4 +1,4 @@
-using System.Diagnostics.Metrics;
+п»їusing System.Diagnostics.Metrics;
 using System.Runtime.InteropServices;
 using System.Security.Policy;
 using System.Xml;
@@ -136,13 +136,13 @@ namespace OP_Macro
                 }
                 else if (m.WParam.ToInt32() == 3)
                 {
-                    recordActionLabel.Text = "Активно";
+                    recordActionLabel.Text = "РђРєС‚РёРІРЅРѕ";
                     recordClicksCounter = 0;
                     Record();
                 }
                 else if (m.WParam.ToInt32() == 4)
                 {
-                    replayActionLabel.Text = "Активно";
+                    replayActionLabel.Text = "РђРєС‚РёРІРЅРѕ";
                     loopsCounter = 0;
                     StartReplay();
                 }
@@ -207,7 +207,7 @@ namespace OP_Macro
                     }
                     else
                     {
-                        MessageBox.Show("Запазеният текст не е намерен!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Р¤Р°Р№Р»СЉС‚ РЅРµ СЃСЉРґСЉСЂР¶Р° С‚РµРєСЃС‚!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     RegisterEverything();
                 }
@@ -230,7 +230,7 @@ namespace OP_Macro
                     }
                     else
                     {
-                        MessageBox.Show("Запазеният текст не е намерен!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Р¤Р°Р№Р»СЉС‚ РЅРµ СЃСЉРґСЉСЂР¶Р° С‚РµРєСЃС‚!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     RegisterEverything();
                 }
@@ -253,7 +253,7 @@ namespace OP_Macro
                     }
                     else
                     {
-                        MessageBox.Show("Запазеният текст не е намерен!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Р¤Р°Р№Р»СЉС‚ РЅРµ СЃСЉРґСЉСЂР¶Р° С‚РµРєСЃС‚!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     RegisterEverything();
                 }
@@ -297,15 +297,15 @@ namespace OP_Macro
                 {
                     counter = 0;
                     loopsCounterTeleport++;
-                    teleportLoopsLabel.Text = "Повторения: " + loopsCounterTeleport;
+                    teleportLoopsLabel.Text = "РџРѕРІС‚РѕСЂРµРЅРёСЏ: " + loopsCounterTeleport;
                 }
                 SetCursorPos(coords[counter].X, coords[counter].Y);
                 counter++;
-                teleportPositionLabel.Text = "Индекс: " + counter;
+                teleportPositionLabel.Text = "РРЅРґРµРєСЃ: " + counter;
             }
             else
             {
-                MessageBox.Show("Няма поставени координати!");
+                MessageBox.Show("РќСЏРјР° РёР·Р±СЂР°РЅРё РєРѕРѕСЂРґРёРЅР°С‚Рё!");
             }
         }
 
@@ -315,7 +315,7 @@ namespace OP_Macro
             {
                 if (recordedEvents.Count == 0)
                 {
-                    MessageBox.Show("Няма нищо заснето.");
+                    MessageBox.Show("РќСЏРјР° Р·Р°РїРёСЃРё.");
                     return;
                 }
                 replayIndex = 0;
@@ -329,7 +329,7 @@ namespace OP_Macro
             {
                 replayTimer.Stop();
                 isReplaying = false;
-                replayActionLabel.Text = "Неактивно";
+                replayActionLabel.Text = "РќРµР°РєС‚РёРІРЅРѕ";
             }
         }
 
@@ -342,7 +342,7 @@ namespace OP_Macro
                 loopsCounter++;
                 replayTimer.Interval = Math.Max(recordedEvents[replayIndex].Delay, 1);
                 replayTimer.Start();
-                replayLoopLabel.Text = "Повторения: " + loopsCounter.ToString();
+                replayLoopLabel.Text = "РџРѕРІС‚РѕСЂРµРЅРёСЏ: " + loopsCounter.ToString();
                 return;
             }
 
@@ -381,7 +381,7 @@ namespace OP_Macro
                     if (message == WM_LBUTTONDOWN)
                     {
                         recordClicksCounter++;
-                        recordClicksLabel.Text = "Кликове: " + recordClicksCounter;
+                        recordClicksLabel.Text = "РљР»РёРєРѕРІРµ: " + recordClicksCounter;
                     }
                     int delay = (int)(DateTime.Now - lastRecordTime).TotalMilliseconds;
 
@@ -420,7 +420,7 @@ namespace OP_Macro
             }
             else
             {
-                recordActionLabel.Text = "Неактивно";
+                recordActionLabel.Text = "РќРµР°РєС‚РёРІРЅРѕ";
                 isRecording = false;
                 UnhookWindowsHookEx(hookID);
             }
@@ -432,7 +432,7 @@ namespace OP_Macro
             {
                 isAutoclickerRunning = true;
                 autoclicker.Start();
-                clickToggleButton.Text = "Изключи";
+                clickToggleButton.Text = "РР·РєР»СЋС‡Рё";
                 clickToggleButton.Enabled = false;
                 RepetitionCB.Enabled = false;
                 repetitionsNumBox.Enabled = false;
@@ -443,7 +443,7 @@ namespace OP_Macro
             {
                 isAutoclickerRunning = false;
                 autoclicker.Stop();
-                clickToggleButton.Text = "Включи";
+                clickToggleButton.Text = "Р’РєР»СЋС‡Рё";
                 RepetitionCB.Enabled = true;
                 if (RepetitionCB.Checked)
                 {
@@ -458,7 +458,7 @@ namespace OP_Macro
             {
                 isAutoclickerRunning = true;
                 autoclickerRepetition.Start();
-                clickToggleButton.Text = "Изключи";
+                clickToggleButton.Text = "РР·РєР»СЋС‡Рё";
                 clickToggleButton.Enabled = false;
                 RepetitionCB.Enabled = false;
                 repetitionsNumBox.Enabled = false;
@@ -469,7 +469,7 @@ namespace OP_Macro
             {
                 isAutoclickerRunning = false;
                 autoclickerRepetition.Stop();
-                clickToggleButton.Text = "Включи";
+                clickToggleButton.Text = "Р’РєР»СЋС‡Рё";
                 RepetitionCB.Enabled = true;
                 repetitionsNumBox.Enabled = true;
             }
@@ -485,7 +485,7 @@ namespace OP_Macro
         {
             if (!int.TryParse(TBHours.Text, out int i) || int.Parse(TBHours.Text) < 0)
             {
-                MessageBox.Show("Часовете не могат да са под 0.");
+                MessageBox.Show("РЎС‚РѕР№РЅРѕСЃС‚С‚Р° РЅРµ РјРѕР¶Рµ РґР° Рµ РїРѕРґ 0.");
                 TBHours.Text = "0";
             }
             foreach (var num in TBHours.Text)
@@ -522,7 +522,7 @@ namespace OP_Macro
         {
             if (!int.TryParse(TBMinutes.Text, out int i) || int.Parse(TBMinutes.Text) < 0)
             {
-                MessageBox.Show("Минутите не могат да са под 0.");
+                MessageBox.Show("РЎС‚РѕР№РЅРѕСЃС‚С‚Р° РЅРµ РјРѕР¶Рµ РґР° Рµ РїРѕРґ 0.");
                 TBMinutes.Text = "0";
             }
             foreach (var num in TBMinutes.Text)
@@ -559,7 +559,7 @@ namespace OP_Macro
         {
             if (!int.TryParse(TBSeconds.Text, out int i) || int.Parse(TBSeconds.Text) < 0)
             {
-                MessageBox.Show("Секундите не могат да са 0.");
+                MessageBox.Show("РЎС‚РѕР№РЅРѕСЃС‚С‚Р° РЅРµ РјРѕР¶Рµ РґР° Рµ РїРѕРґ 0.");
                 TBSeconds.Text = "0";
             }
             foreach (var num in TBSeconds.Text)
@@ -596,7 +596,7 @@ namespace OP_Macro
         {
             if (!int.TryParse(TBMilliseconds.Text, out int i) || int.Parse(TBMilliseconds.Text) < 1)
             {
-                MessageBox.Show("Милисекундите не могат да са 1.");
+                MessageBox.Show("РЎС‚РѕР№РЅРѕСЃС‚С‚Р° РЅРµ РјРѕР¶Рµ РґР° Рµ РїРѕРґ 1.");
                 TBMilliseconds.Text = "1000";
             }
             foreach (var num in TBMilliseconds.Text)
@@ -917,11 +917,11 @@ namespace OP_Macro
                 string json = JsonConvert.SerializeObject(recordedEvents, Newtonsoft.Json.Formatting.Indented);
                 File.WriteAllText(savePath, json);
 
-                MessageBox.Show("Запис запазен успешно!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Р—Р°РїРёСЃ Р·Р°РїРёСЃР°РЅ СѓСЃРїРµС€РЅРѕ!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("Запис липсващ!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Р—Р°РїРёСЃ Р»РёРїСЃРІР°С‰!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -984,6 +984,21 @@ namespace OP_Macro
             HelpForm help = new HelpForm();
             help.ShowDialog();
             RegisterEverything();
+        }
+
+        private void textGroupBox_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void teleportX1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
